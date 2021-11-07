@@ -35,7 +35,7 @@ def down(event):
 if __name__ == '__main__':
     main_window = Tk()
     main_window.title("My Snake")
-    main_window.geometry("800x600")
+    main_window.geometry("800x650")
     
     snake_canvas = Canvas(main_window, width=800, height=600, background="grey")
     snake_canvas.pack()
@@ -50,6 +50,8 @@ if __name__ == '__main__':
     main_window.bind('<Left>', left)
     main_window.bind('<Up>' , up)
     main_window.bind('<Down>', down)
+    
+    #b1 = Button(fen, text='Rejouer', command=newGame, bg='black' , fg='green')
     
     move()
     
